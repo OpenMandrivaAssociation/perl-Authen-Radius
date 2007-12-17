@@ -14,7 +14,6 @@ Requires:	perl
 URL:		http://search.cpan.org/dist/%{module}
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Authen/%{tarname}-%{version}.tar.bz2
 BuildRequires:	perl-devel
-Buildroot:	%{_tmppath}/%{name}-root
 BuildArch:	noarch
 
 %description
