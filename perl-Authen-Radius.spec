@@ -18,7 +18,6 @@ Buildroot:	%{_tmppath}/%{name}-root
 BuildArch:	noarch
 
 %description
-
 RadiusPerl is a Perl 5 module (Radius.pm) which allows you to 
 communicate with a Radius server from Perl. You can just authenticate 
 usernames/passwords via Radius, or comletely imitate AAA requests 
