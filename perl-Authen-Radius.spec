@@ -1,7 +1,7 @@
 %define module	Authen-Radius
 %define name	perl-%{module}
 %define version 0.13
-%define release %mkrel 2
+%define release %mkrel 3
 %define tarname RadiusPerl 
 
 Summary:	Radius authentication interface to Perl 5	
