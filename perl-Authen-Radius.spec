@@ -1,21 +1,19 @@
-%define module	Authen-Radius
-%define name	perl-%{module}
-%define version 0.13
-%define release %mkrel 3
+%define upstream_name	 Authen-Radius
+%define upstream_version 0.14
 %define tarname RadiusPerl 
 
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Radius authentication interface to Perl 5	
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
 License:	GPL
 Group:		Development/Perl
-Requires:	perl
-URL:		http://search.cpan.org/dist/%{module}
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Authen/%{tarname}-%{version}.tar.bz2
-BuildRequires:	perl-devel
-Buildroot:	%{_tmppath}/%{name}-root
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Authen/%{tarname}-%{upstream_version}.tar.gz
+
 BuildArch:	noarch
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 RadiusPerl is a Perl 5 module (Radius.pm) which allows you to 
@@ -24,7 +22,7 @@ usernames/passwords via Radius, or comletely imitate AAA requests
 and process server response.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor 
@@ -44,6 +42,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %{_mandir}/man3/*
 %{perl_vendorlib}/Authen
-
-
-
