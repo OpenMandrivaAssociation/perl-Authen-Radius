@@ -1,5 +1,5 @@
 %define upstream_name	 Authen-Radius
-%define upstream_version 0.17
+%define upstream_version 0.20
 %define tarname RadiusPerl 
 
 Name:       perl-%{upstream_name}
