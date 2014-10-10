@@ -5,7 +5,7 @@
 Summary:	Radius authentication interface to Perl 5	
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	12
+Release:	13
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
