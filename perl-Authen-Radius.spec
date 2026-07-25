@@ -1,15 +1,15 @@
 %define upstream_name	 Authen-Radius
-%define upstream_version 0.20
+%define upstream_version 0.37
 %define tarname RadiusPerl 
 
 Summary:	Radius authentication interface to Perl 5	
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	17
+Version:	%{upstream_version}
+Release:	1
 License:	GPLv2
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Authen/%{tarname}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Authen-Radius
+Source0:	https://cpan.metacpan.org/authors/id/P/PO/PORTAONE/Authen-Radius-%{upstream_version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
