@@ -1,15 +1,14 @@
 %define upstream_name	 Authen-Radius
-%define upstream_version 0.37
 %define tarname RadiusPerl 
 
 Summary:	Radius authentication interface to Perl 5	
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.37
+Release:	2
 License:	GPLv2
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Authen-Radius
-Source0:	https://cpan.metacpan.org/authors/id/P/PO/PORTAONE/Authen-Radius-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/P/PO/PORTAONE/Authen-Radius-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +20,7 @@ usernames/passwords via Radius, or comletely imitate AAA requests
 and process server response.
 
 %prep
-%setup -qn %{upstream_name}-%{upstream_version}
+%setup -qn %{upstream_name}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor 
